@@ -32,7 +32,7 @@ int main()
         tempoTotal = 24;
     }
 
-    printf("O JOGO DUROU %d HORA(S)", tempoTotal);
-
+    printf("O JOGO DUROU %d HORA(S)\n", tempoTotal);
+    
     return 0;
 }
