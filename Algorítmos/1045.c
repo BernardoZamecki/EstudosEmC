@@ -23,7 +23,6 @@ int main()
 
     scanf("%f %f %f", &a, &b, &c);
 
-
     if (a > b)
     {
         max = a;
@@ -36,6 +35,7 @@ int main()
         max = b;
         numC = c;
     }
+
     if (c > max)
     {
         numB = a;
@@ -48,18 +48,22 @@ int main()
         printf("NAO FORMA TRIANGULO\n");
         return 0;
     }
+
     if ((max * max) == (numB * numB) + (numC * numC))
     {
         printf("TRIANGULO RETANGULO\n");
     }
+
     if ((max * max) > (numB * numB) + (numC * numC))
     {
         printf("TRIANGULO OBTUSANGULO\n");
     }
+
     if ((max * max) < (numB * numB) + (numC * numC))
     {
         printf("TRIANGULO ACUTANGULO\n");
     }
+
     if (max == numB && max == numC && numB == numC)
     {
         printf ("TRIANGULO EQUILATERO\n");
@@ -68,5 +72,6 @@ int main()
     {
         printf("TRIANGULO ISOSCELES\n");
     }
+
     return 0;
 }
