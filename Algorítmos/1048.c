@@ -23,7 +23,8 @@ ganho, conforme exemplo abaixo.
 */
 #include <stdio.h>
  
-int main() {
+int main()
+{
  
     float salario, novoSalario, aumento;
     int porcentAumento;
