@@ -26,24 +26,25 @@ a serem gastos com o melhor posicionamento possível da máquina.
  
 int main()
 {
-    int a1, a2, a3, minutos;
+    int a1, a2, a3, minutos1, minutos2, minutos3;
     scanf("%d %d %d", &a1, &a2, &a3);
-    if ((a1 < 0 || a1 > 1000) || (a2 < 0 || a2 > 1000) || (a3 < 0 || a3 > 1000))
+
+    minutos1 = a2 * 2 + a3 * 4;
+    minutos2 = a1 * 2 + a3 * 2;
+    minutos3 = a1 * 4 + a2 * 2;
+
+    if (minutos1 <= minutos2 && minutos1 <= minutos3)
     {
-        return 0;
+        printf("%d\n", minutos1);
     }
-    if (a1 > a2 && a1 > a3)
+    else if (minutos2 <= minutos1 && minutos2 <= minutos3)
     {
-        minutos = a2 * 2 + a3 * 4;
-    }
-    else if (a2 > a1 && a2 > a3)
-    {
-        minutos = a1 * 2 + a3 * 2;
+        printf("%d\n", minutos2);
     }
     else
     {
-        minutos = a1 * 4 + a2 * 2;
+        printf("%d\n", minutos3);
     }
-    printf("%d\n", minutos);
+
     return 0;
 }
